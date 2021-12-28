@@ -14,3 +14,10 @@
 - 'this' is a reference to the new object
 - implicitly returh this is there but in code we dont write `return this`
 - ES6 arrow functions cannot be used as constructor functions
+- when you return object that is called factory function and when you use this along with new operator it is constructor funtion
+
+Constructor Property
+- Every object has a constructor property that points to the constructor function that created it
+- there are many constructor properties like new String(), new Array(), new Date(), new Boolean(), new Number() but we use 'jatin',true,1,2
+- when we create object jaavscript engine behind the scene uses new Object() constructor
+- another.constructor, by default new Object()  constructor is not shown in console.log hereas constructor function, object's constructors are shown.
