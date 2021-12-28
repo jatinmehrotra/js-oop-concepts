@@ -21,3 +21,7 @@ Constructor Property
 - there are many constructor properties like new String(), new Array(), new Date(), new Boolean(), new Number() but we use 'jatin',true,1,2
 - when we create object jaavscript engine behind the scene uses new Object() constructor
 - another.constructor, by default new Object()  constructor is not shown in console.log hereas constructor function, object's constructors are shown.
+
+- Functions are objects
+- when you create function internally JS engines uses another ocnstructor called as new Function() to create function object.
+- there is property on function which is call, internally it creates empty object so that this can reference it
