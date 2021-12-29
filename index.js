@@ -15,8 +15,15 @@ circle.draw();
 
 // constructor function
 function Circle(radius) {
+  let defaultLocation = { x: 0, y: 0 };
+  let computeOptimumLocation = function () {
+    console.log('computeOptimumLocation');
+  };
   this.radius = radius;
   this.draw = function () {
+    computeOptimumLocation();
+    //defaultLocation;
+    // this.radius
     console.log('draw with constructor');
     console.log('radius', radius);
   };

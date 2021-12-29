@@ -30,3 +30,9 @@ Constructor Property
 - value types: number, string, boolen, symbol,null, undefined
 - refernce type : object function, array
 - value types are copied by their value and reference types are copied by their memory adress
+
+
+Abstraction
+- for inner function there is scope and closures.
+- scopes are temporary when function dies scope of inner function dies too, but closures are permanent of the parent function
+-  when you use this it becomes a property of that object however using let or const makes it private and local. hence enabling us to achieve abstraction.
