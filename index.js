@@ -25,6 +25,15 @@ function Circle(radius) {
 const circle2 = new Circle(4);
 console.log(circle2);
 
+for (let key in circle2) {
+  console.log(key);
+}
+const keys = Object.keys(circle2);
+console.log(keys);
+
+if ('radius' in circle2) {
+  console.log('yes');
+}
 // behind the scenes of creating function
 // const CIrcle1 = new Function(
 //   'radius',
@@ -56,10 +65,10 @@ console.log(circle2);
 
 // deleting property
 
-let obj = {
-  name: 'John',
-};
+// let obj = {
+//   name: 'John',
+// };
 
-obj.surname = 'Smith';
+// obj.surname = 'Smith';
 
-delete obj.name;
+// delete obj.name;
