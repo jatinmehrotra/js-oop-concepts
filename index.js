@@ -49,7 +49,17 @@ console.log(circle2);
 
 // //y = 10
 
-let x = { value: 10 };
-let y = x;
+// let x = { value: 10 };
+// let y = x;
 
-x.value = 20;
+// x.value = 20;
+
+// deleting property
+
+let obj = {
+  name: 'John',
+};
+
+obj.surname = 'Smith';
+
+delete obj.name;
