@@ -20,7 +20,7 @@ Constructor Property
 - Every object has a constructor property that points to the constructor function that created it
 - there are many constructor properties like new String(), new Array(), new Date(), new Boolean(), new Number() but we use 'jatin',true,1,2
 - when we create object jaavscript engine behind the scene uses new Object() constructor
-- another.constructor, by default new Object()  constructor is not shown in console.log hereas constructor function, object's constructors are shown.
+- another.constructor, by default new Object()  constructor is not shown in console.log whereas constructor function, object's constructors are shown.
 
 - Functions are objects
 - when you create function internally JS engines uses another ocnstructor called as new Function() to create function object.
@@ -36,3 +36,8 @@ Abstraction
 - for inner function there is scope and closures.
 - scopes are temporary when function dies scope of inner function dies too, but closures are permanent of the parent function
 -  when you use this it becomes a property of that object however using let or const makes it private and local. hence enabling us to achieve abstraction.
+
+
+getter/setter
+-  getters are used to expose read only property
+-  setters are use to set object property form outside

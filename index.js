@@ -16,9 +16,9 @@ circle.draw();
 // constructor function
 function Circle(radius) {
   let defaultLocation = { x: 0, y: 0 };
-  let computeOptimumLocation = function () {
-    console.log('computeOptimumLocation');
-  };
+  // this.getDefaultLocation = function () {
+  //   return defaultLocation;
+  // };
   this.radius = radius;
   this.draw = function () {
     computeOptimumLocation();
@@ -27,20 +27,32 @@ function Circle(radius) {
     console.log('draw with constructor');
     console.log('radius', radius);
   };
+  Object.defineProperty(this, 'defaultLocation', {
+    get: function () {
+      return defaultLocation;
+    },
+    set: function (value) {
+      if (!value.x || !value.y) {
+        throw new Error('Invalid location');
+      }
+      defaultLocation = value;
+    },
+  });
 }
 
 const circle2 = new Circle(4);
-console.log(circle2);
+console.log(circle2.defaultLocation);
 
-for (let key in circle2) {
-  console.log(key);
-}
-const keys = Object.keys(circle2);
-console.log(keys);
+// for (let key in circle2) {
+//   console.log(key);
+// }
+// const keys = Object.keys(circle2);
+// console.log(keys);
 
-if ('radius' in circle2) {
-  console.log('yes');
-}
+// if ('radius' in circle2) {
+//   console.log('yes');
+// }
+
 // behind the scenes of creating function
 // const CIrcle1 = new Function(
 //   'radius',
