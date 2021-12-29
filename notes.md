@@ -25,3 +25,8 @@ Constructor Property
 - Functions are objects
 - when you create function internally JS engines uses another ocnstructor called as new Function() to create function object.
 - there is property on function which is call, internally it creates empty object so that this can reference it
+
+- Value types and  ref types
+- value types: number, string, boolen, symbol,null, undefined
+- refernce type : object function, array
+- value types are copied by their value and reference types are copied by their memory adress

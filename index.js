@@ -24,7 +24,6 @@ function Circle(radius) {
 
 const circle2 = new Circle(4);
 console.log(circle2);
-circ;
 
 // behind the scenes of creating function
 // const CIrcle1 = new Function(
@@ -42,3 +41,15 @@ circ;
 // Circle.call({},1)
 // Circle.call(window,1)
 // Circle.apply({},[1,2,3])
+
+// let x = 10;
+// let y = x;
+
+// x = 20;
+
+// //y = 10
+
+let x = { value: 10 };
+let y = x;
+
+x.value = 20;
